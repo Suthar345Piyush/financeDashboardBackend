@@ -27,7 +27,7 @@ func Error(w http.ResponseWriter, status int, message string) {
 
 // function for validation  error
 
-func ValidationErro(w http.ResponseWriter, errors map[string]string) {
+func ValidationError(w http.ResponseWriter, errors map[string]string) {
 	JSON(w, http.StatusUnprocessableEntity, envelope{
 		"success":           false,
 		"error":             "validation failed",

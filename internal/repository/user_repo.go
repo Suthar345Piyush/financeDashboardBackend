@@ -140,7 +140,7 @@ func (r *UserRepository) UpdateRole(id string, role models.Role) error {
 
 // function to update the status
 
-func (r *UserRepository) updateStatus(id string, isActive bool) error {
+func (r *UserRepository) UpdateStatus(id string, isActive bool) error {
 
 	query := `UPDATE users SET is_active = ?, updated_at = ? WHERE id = ?`
 
