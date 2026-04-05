@@ -30,7 +30,8 @@ GET - /dashboard/trends - Analyst, Admin
 
 # High Level Architecture of the App 
 
-![Alt text](<Screenshot 2026-04-05 145452-1.png>)
+<img width="1295" height="987" alt="image" src="https://github.com/user-attachments/assets/584d3e65-fce1-47a1-9294-df15b123036b" />
+
 
 
 # Folder Structure 
