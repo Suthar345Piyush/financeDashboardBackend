@@ -84,4 +84,37 @@ finance-dashboard/
 └── finance.db-wal
 
 ```
+# Getting Started
+
+**1. Clone or download the project**
+
+bashgit clone <your-repo-url>
+cd financeDashboardBackend
+
+**2. Install dependencies**
+
+bashgo mod tidy
+This downloads all required packages including modernc.org/sqlite (pure Go — no gcc or CGO needed).
+
+**3. Configure environment**
+
+A .env file is already included. Edit it if needed:
+envPORT=8080
+DB_PATH=./finance.db
+JWT_SECRET=your-secret-key
+JWT_EXPIRY_HOURS=24
+
+
+**4. Run the server**
+   
+bashgo run main.go
+
+You should see:
+
+2026/04/04 17:38:47 Database connected: ./finance.db
+2026/04/04 17:38:47 Migration applied: 001_init.sql
+2026/04/04 17:38:47 Server starting on port :8080
+
+
+
 
